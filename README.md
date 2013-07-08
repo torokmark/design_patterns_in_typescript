@@ -8,3 +8,4 @@ Here are the implementations of the following design patterns in TypeScript:
 * Abstract Factory
 * Factory Method
 * Builder
+* Prototype
