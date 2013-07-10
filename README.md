@@ -17,6 +17,7 @@ Here are the implementations of the following design patterns in TypeScript:
 * Bridge
 * Composite
 * Decorator
+* Facade
 
 
 
