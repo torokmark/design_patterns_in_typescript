@@ -18,6 +18,7 @@ Here are the implementations of the following design patterns in TypeScript:
 * Composite
 * Decorator
 * Facade
+* Flyweight
 
 
 
