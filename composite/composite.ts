@@ -24,7 +24,7 @@ class Composite implements Component {
     }
 
     public remove(i: number): void {
-        if (this.list.length < i) {
+        if (this.list.length <= i) {
             throw new Error("index out of bound!");
         }
         this.list.splice(i, 1);
@@ -52,6 +52,8 @@ class Leaf implements Component {
     composite1.add(leaf1);
     composite1.add(leaf2);
     composite1.add(leaf3);
+
+    composite1.remove(2);
 
     composite2.add(leaf1);
     composite2.add(leaf3);
