@@ -15,7 +15,7 @@ Here are the implementations of the following design patterns in TypeScript:
 
 * Adapter
 * Bridge
-
+* Composite
 
 
 
