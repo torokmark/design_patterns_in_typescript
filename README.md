@@ -5,7 +5,7 @@ Here are the implementations of the following design patterns in TypeScript:
 ### Creational ###
 
 * Singleton
-* Abstract Factory [https://github.com/torokmark/design_patterns_in_typescript/tree/master/abstract_factory]
+* (Abstract Factory)[https://github.com/torokmark/design_patterns_in_typescript/tree/master/abstract_factory]
 * Factory Method
 * Builder
 * Prototype
