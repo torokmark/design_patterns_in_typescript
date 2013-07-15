@@ -5,7 +5,7 @@ Here are the implementations of the following design patterns in TypeScript:
 ### Creational ###
 
 * Singleton
-* Abstract Factory
+* Abstract Factory [https://github.com/torokmark/design_patterns_in_typescript/tree/master/abstract_factory]
 * Factory Method
 * Builder
 * Prototype
@@ -21,6 +21,10 @@ Here are the implementations of the following design patterns in TypeScript:
 * Flyweight
 * Proxy
 
+
+### Behavioral Patterns ###
+
+* Chain of Responsibility
 
 
 
