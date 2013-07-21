@@ -28,5 +28,5 @@ Here are the implementations of the following design patterns in TypeScript:
 * [Command](https://github.com/torokmark/design_patterns_in_typescript/tree/master/command)
 * [Interpreter](https://github.com/torokmark/design_patterns_in_typescript/tree/master/interpreter)
 * [Iterator](https://github.com/torokmark/design_patterns_in_typescript/tree/master/iterator)
-
+* [Mediator](https://github.com/torokmark/design_patterns_in_typescript/tree/master/mediator)
 
