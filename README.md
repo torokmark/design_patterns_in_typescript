@@ -29,4 +29,5 @@ Here are the implementations of the following design patterns in TypeScript:
 * [Interpreter](https://github.com/torokmark/design_patterns_in_typescript/tree/master/interpreter)
 * [Iterator](https://github.com/torokmark/design_patterns_in_typescript/tree/master/iterator)
 * [Mediator](https://github.com/torokmark/design_patterns_in_typescript/tree/master/mediator)
+* [Memento](https://github.com/torokmark/design_patterns_in_typescript/tree/master/memento)
 
