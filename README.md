@@ -32,4 +32,4 @@ Here are the implementations of the following design patterns in TypeScript:
 * [Memento](https://github.com/torokmark/design_patterns_in_typescript/tree/master/memento)
 * [Observer](https://github.com/torokmark/design_patterns_in_typescript/tree/master/observer)
 * [State](https://github.com/torokmark/design_patterns_in_typescript/tree/master/state)
-
+* [Strategy](https://github.com/torokmark/design_patterns_in_typescript/tree/master/strategy)
