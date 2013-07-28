@@ -33,3 +33,4 @@ Here are the implementations of the following design patterns in TypeScript:
 * [Observer](https://github.com/torokmark/design_patterns_in_typescript/tree/master/observer)
 * [State](https://github.com/torokmark/design_patterns_in_typescript/tree/master/state)
 * [Strategy](https://github.com/torokmark/design_patterns_in_typescript/tree/master/strategy)
+* [Template Method](https://github.com/torokmark/design_patterns_in_typescript/tree/master/template_method)
