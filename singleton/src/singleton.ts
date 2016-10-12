@@ -1,14 +1,14 @@
+namespace SingletonPattern {
+    export class Singleton {
+        private static instance: Singleton;
 
-class Singleton {
-    private static instance: Singleton;
+        constructor() {}
 
-    constructor() {}
-
-    static get Instance() {
-        if (this.instance === null || this.instance === undefined) {
-            this.instance = new Singleton();
+        static get Instance() {
+            if (this.instance === null || this.instance === undefined) {
+                this.instance = new Singleton();
+            }
+            return this.instance;
         }
-        return this.instance;
     }
 }
-

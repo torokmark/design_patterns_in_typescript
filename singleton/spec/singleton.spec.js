@@ -3,7 +3,7 @@ define("singleton", function () {
         singleton2;
 
     beforeEach(function () {
-        singleton1 = Singleton.Instance;
+        singleton1 = SingletonPattern.Singleton.Instance;
     });
 
     describe("when is initialized", function () {

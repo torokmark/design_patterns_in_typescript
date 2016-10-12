@@ -1,4 +1,4 @@
-module Builder {
+namespace BuilderPattern {
     export class UserBuilder {
         private name: string;
         private age: number;
@@ -69,7 +69,7 @@ module Builder {
 }
 
 (function main() {
-    var u: Builder.User = new Builder.UserBuilder("Jancsi")
+    var u: BuilderPattern.User = new BuilderPattern.UserBuilder("Jancsi")
                         .setAge(12)
                         .setPhone("0123456789")
                         .setAddress("asdf")

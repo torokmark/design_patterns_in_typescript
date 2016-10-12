@@ -1,50 +1,53 @@
-interface Flyweight {
-    operation(s: String): void;
-}
+namespace FlyweightPattern {
 
-class ConcreteFlyweight implements Flyweight {
-    private instrinsicState: String;
-
-    constructor(instrinsicState: String) {
-        this.instrinsicState = instrinsicState;
+    export interface Flyweight {
+        operation(s: String): void;
     }
 
-    public operation(s: String): void {
-        console.log("`operation` of ConcreteFlyweight", s, " is being called!");
-    }
-}
+    export class ConcreteFlyweight implements Flyweight {
+        private instrinsicState: String;
 
-class UnsharedConcreteFlyweight implements Flyweight {
-    private allState: number;
-
-    constructor(allState: number) {
-        this.allState = allState;
-    }
-
-    public operation(s: String): void {
-        console.log("`operation` of UnsharedConcreteFlyweight", s, " is being called!");
-    }
-}
-
-class FlyweightFactory {
-
-    private fliesMap: { [s: string]: Flyweight; } = <any>{};
-
-    constructor() { }
-
-    public getFlyweight(key: string): Flyweight {
-
-        if (this.fliesMap[key] === undefined || null) {
-            this.fliesMap[key] = new ConcreteFlyweight(key);
+        constructor(instrinsicState: String) {
+            this.instrinsicState = instrinsicState;
         }
-        return this.fliesMap[key];        
+
+        public operation(s: String): void {
+            console.log("`operation` of ConcreteFlyweight", s, " is being called!");
+        }
+    }
+
+    export class UnsharedConcreteFlyweight implements Flyweight {
+        private allState: number;
+
+        constructor(allState: number) {
+            this.allState = allState;
+        }
+
+        public operation(s: String): void {
+            console.log("`operation` of UnsharedConcreteFlyweight", s, " is being called!");
+        }
+    }
+
+    export class FlyweightFactory {
+
+        private fliesMap: { [s: string]: Flyweight; } = <any>{};
+
+        constructor() { }
+
+        public getFlyweight(key: string): Flyweight {
+
+            if (this.fliesMap[key] === undefined || null) {
+                this.fliesMap[key] = new ConcreteFlyweight(key);
+            }
+            return this.fliesMap[key];        
+        }
     }
 }
 
 (function main() {
-    var factory: FlyweightFactory   = new FlyweightFactory(),
-        conc1: ConcreteFlyweight    = <ConcreteFlyweight>factory.getFlyweight("conc1"),
-        conc2: ConcreteFlyweight    = <ConcreteFlyweight>factory.getFlyweight("conc2");
+    var factory: FlyweightPattern.FlyweightFactory   = new FlyweightPattern.FlyweightFactory(),
+        conc1: FlyweightPattern.ConcreteFlyweight    = <FlyweightPattern.ConcreteFlyweight>factory.getFlyweight("conc1"),
+        conc2: FlyweightPattern.ConcreteFlyweight    = <FlyweightPattern.ConcreteFlyweight>factory.getFlyweight("conc2");
 
     conc1.operation("1");
     conc2.operation("2");

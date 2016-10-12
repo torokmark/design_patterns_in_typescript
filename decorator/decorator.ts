@@ -1,51 +1,54 @@
-interface Component {
-    operation(): void;
-}
+namespace DecoratorPattern {
 
-class ConcreteComponent implements Component {
-    private s: String;
-
-    constructor(s: String) {
-        this.s = s;
+    export interface Component {
+        operation(): void;
     }
 
-    public operation(): void {
-        console.log("`operation` of ConcreteComponent", this.s, " is being called!");
-    }
-}
+    export class ConcreteComponent implements Component {
+        private s: String;
 
-class Decorator implements Component {
-    private component: Component;
-    private id: Number;
+        constructor(s: String) {
+            this.s = s;
+        }
 
-    constructor(id: Number, component: Component) {
-        this.id = id;
-        this.component = component;
+        public operation(): void {
+            console.log("`operation` of ConcreteComponent", this.s, " is being called!");
+        }
     }
 
-    public get Id(): Number {
-        return this.id;
+    export class Decorator implements Component {
+        private component: Component;
+        private id: Number;
+
+        constructor(id: Number, component: Component) {
+            this.id = id;
+            this.component = component;
+        }
+
+        public get Id(): Number {
+            return this.id;
+        }
+
+        public operation(): void {
+            console.log("`operation` of Decorator", this.id, " is being called!");
+            this.component.operation();
+        }
     }
 
-    public operation(): void {
-        console.log("`operation` of Decorator", this.id, " is being called!");
-        this.component.operation();
-    }
-}
+    export class ConcreteDecorator extends Decorator {
+        constructor(id: Number, component: Component) {
+            super(id, component);
+        }
 
-class ConcreteDecorator extends Decorator {
-    constructor(id: Number, component: Component) {
-        super(id, component);
-    }
-
-    public operation(): void {
-        super.operation();
-        console.log("`operation` of ConcreteDecorator", this.Id, " is being called!");
+        public operation(): void {
+            super.operation();
+            console.log("`operation` of ConcreteDecorator", this.Id, " is being called!");
+        }
     }
 }
 
 (function main() {
-    var decorator1: Decorator = new ConcreteDecorator(1, new ConcreteComponent("Comp1"));
+    var decorator1: DecoratorPattern.Decorator = new DecoratorPattern.ConcreteDecorator(1, new DecoratorPattern.ConcreteComponent("Comp1"));
 
     decorator1.operation();
 }());
