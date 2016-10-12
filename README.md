@@ -35,3 +35,23 @@ Here are the implementations of the following design patterns in TypeScript:
 * [Strategy](https://github.com/torokmark/design_patterns_in_typescript/tree/master/strategy)
 * [Template Method](https://github.com/torokmark/design_patterns_in_typescript/tree/master/template_method)
 * [Visitor](https://github.com/torokmark/design_patterns_in_typescript/tree/master/visitor)
+
+## Compile the project
+
+```
+$ git clone https://github.com/torokmark/design_patterns_in_typescript.git
+$ cd design_patterns_in_typescript
+$ tsc
+```
+
+There is a new `tsconfig.json` file in the root direcotry which is responsible for the compiler options.
+As it is set the default target is Ecmascript5 now.
+Any additional options come here.
+
+To compile only one pattern, use the following command.
+
+```
+$ cd design_patterns_in_typescript/visitor
+$ tsc --target ES5 visitor.ts
+```
+>> Here if there is no `--outFile` option then the compiler generates the js counterpart into the current directory.
