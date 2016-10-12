@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES5",
+        "noImplicitAny": false,
+        "sourceMap": false
+    },
+	"files": [
+		"abstract_factory/abstractFactory.ts",
+		"adapter/adapter.ts",
+		"bridge/bridge.ts",
+		"builder/builder.ts",
+		"chain_of_responsibility/chainOfResponsibility.ts",
+		"command/command.ts",
+		"composite/composite.ts",
+		"decorator/decorator.ts",
+		"facade/facade.ts",
+		"factory_method/factoryMethod.ts",
+		"flyweight/flyweight.ts",
+		"interpreter/interpreter.ts",
+		"mediator/mediator.ts",
+		"iterator/iterator.ts",
+		"mediator/mediator.ts",
+		"memento/memento.ts",
+		"observer/observer.ts",
+		"prototype/prototype.ts",
+		"proxy/proxy.ts",
+		"singleton/src/singleton.ts",
+		"state/state.ts",
+		"strategy/strategy.ts",
+		"template_method/templateMethod.ts"
+	]
+}
