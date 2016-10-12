@@ -54,4 +54,4 @@ To compile only one pattern, use the following command.
 $ cd design_patterns_in_typescript/visitor
 $ tsc --target ES5 visitor.ts
 ```
->> Here if there is no `--outFile` option then the compiler generates the js counterpart into the current directory.
+> Here if there is no `--outFile` option then the compiler generates the js counterpart into the current directory.
