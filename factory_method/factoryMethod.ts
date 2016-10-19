@@ -6,13 +6,13 @@ namespace FactoryMethodPattern {
 
     export class ConcreteProductA implements AbstractProduct {
         method = (param?: any) => {
-            return "This is method of ConcreteProductA";
+            return "Method of ConcreteProductA";
         }
     }
 
     export class ConcreteProductB implements AbstractProduct {
         method = (param?: any) => {
-            return "This is method of ConcreteProductB";
+            return "Method of ConcreteProductB";
         }
     }
 
@@ -29,11 +29,3 @@ namespace FactoryMethodPattern {
         }
     }
 }
-
-(function main() {
-    var a: FactoryMethodPattern.AbstractProduct = FactoryMethodPattern.ProductFactory.createProduct("A");
-    var b: FactoryMethodPattern.AbstractProduct = FactoryMethodPattern.ProductFactory.createProduct("B");
-
-    console.log(a.method());
-    console.log(b.method());
-}());
