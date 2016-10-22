@@ -12,4 +12,3 @@ namespace FactoryMethodPattern {
 	}
 }
 
-FactoryMethodPattern.Demo.show();

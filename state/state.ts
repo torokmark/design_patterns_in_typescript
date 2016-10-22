@@ -39,16 +39,3 @@ namespace StatePattern {
     }
 }
 
-
-(function main() {
-    var context: StatePattern.Context = new StatePattern.Context(new StatePattern.ConcreteStateA());
-    context.request();
-    context.request();
-    context.request();
-    context.request();
-    context.request();
-    context.request();
-    context.request();
-    context.request();
-    
-}());

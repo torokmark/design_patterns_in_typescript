@@ -15,4 +15,3 @@ namespace SingletonPattern {
 	}
 }
 
-SingletonPattern.Demo.show();

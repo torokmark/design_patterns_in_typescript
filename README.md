@@ -44,7 +44,7 @@ $ cd design_patterns_in_typescript
 $ tsc
 ```
 
-There is a new `tsconfig.json` file in the root direcotry which is responsible for the compiler options.
+There is a new `tsconfig.json` file in the root directory which is responsible for the compiler options.
 As it is set the default target is Ecmascript5 now.
 Any additional options come here.
 

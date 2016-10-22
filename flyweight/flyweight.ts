@@ -39,16 +39,7 @@ namespace FlyweightPattern {
             if (this.fliesMap[key] === undefined || null) {
                 this.fliesMap[key] = new ConcreteFlyweight(key);
             }
-            return this.fliesMap[key];        
+            return this.fliesMap[key];
         }
     }
 }
-
-(function main() {
-    var factory: FlyweightPattern.FlyweightFactory   = new FlyweightPattern.FlyweightFactory(),
-        conc1: FlyweightPattern.ConcreteFlyweight    = <FlyweightPattern.ConcreteFlyweight>factory.getFlyweight("conc1"),
-        conc2: FlyweightPattern.ConcreteFlyweight    = <FlyweightPattern.ConcreteFlyweight>factory.getFlyweight("conc2");
-
-    conc1.operation("1");
-    conc2.operation("2");
-}());

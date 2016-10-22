@@ -1,5 +1,4 @@
-namespace ComponentPattern {
- 
+namespace CompositePattern {
     export interface Component {
         operation(): void;
     }
@@ -44,23 +43,3 @@ namespace ComponentPattern {
     }
 }
 
-(function main() {
-    var leaf1 = new ComponentPattern.Leaf("1"), 
-        leaf2 = new ComponentPattern.Leaf("2"),
-        leaf3 = new ComponentPattern.Leaf("3"),
-
-        composite1 = new ComponentPattern.Composite("Comp1"),
-        composite2 = new ComponentPattern.Composite("Comp2");
-
-    composite1.add(leaf1);
-    composite1.add(leaf2);
-    composite1.add(leaf3);
-
-    composite1.remove(2);
-
-    composite2.add(leaf1);
-    composite2.add(leaf3);
-
-    composite1.operation();
-    composite2.operation();
-}());

@@ -18,8 +18,3 @@ namespace AdapterPattern {
         }
     }
 }
-
-(function main() {
-    var adapter: AdapterPattern.Adapter = new AdapterPattern.Adapter();
-    adapter.call();
-}());
