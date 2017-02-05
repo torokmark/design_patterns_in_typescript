@@ -29,14 +29,14 @@ namespace VisitorPattern {
         operate(visitor: Visitor): void;
     }
 
-    export class ConcreteElement1 {
+    export class ConcreteElement1 implements Element {
         public operate(visitor: Visitor): void {
             console.log("`operate` of ConcreteElement1 is being called!");
             visitor.visitConcreteElement1(this);
         }
     }
 
-    export class ConcreteElement2 {
+    export class ConcreteElement2 implements Element {
         public operate(visitor: Visitor): void {
             console.log("`operate` of ConcreteElement2 is being called!");
             visitor.visitConcreteElement2(this);
