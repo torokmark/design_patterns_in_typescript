@@ -25,11 +25,7 @@ namespace IteratorPattern {
         }
 
         public hasNext(): boolean {
-            if (this.position < this.collection.length) {
-                return true;
-            } else {
-                return false;
-            }
+            return this.position < this.collection.length;
         }
     }
 
