@@ -17,8 +17,5 @@ namespace Singleton {
             // return the singleton object
             return this.__singleton
         }
-        public getSingletonName(name: string) {
-            alert(`Singleton is ${name}`)
-        }
     }
 }
