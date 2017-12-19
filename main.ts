@@ -1,4 +1,4 @@
-/// <reference path="singleton/src/demo.ts" />
+/// <reference path="singleton/demo.ts" />
 /// <reference path="abstract_factory/demo.ts" />
 /// <reference path="factory_method/demo.ts" />
 /// <reference path="builder/demo.ts" />
