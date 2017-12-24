@@ -1,5 +1,5 @@
-namespace Singleton {
-    class Singleton {
+namespace SingletonPattern {
+    export class Singleton {
         // A variable which stores the singleton object. Intially,
         // the variable acts like a placeholder
         private static singleton: Singleton = null;
@@ -7,7 +7,7 @@ namespace Singleton {
         private constructor() {
         }
         // This is how we create a singleton object
-        public static getInstance(): Singleton {
+        public static Instance(): Singleton {
             // check if an instance of the class is already created
             if (this.singleton == null) {
                 // If not created create an instance of the class
