@@ -17,8 +17,8 @@ namespace FactoryMethodPattern {
     }
 
 
-    export class ProductFactory {
-        public static createProduct(type: string) : AbstractProduct {
+    export namespace ProductFactory {
+        export function createProduct(type: string) : AbstractProduct {
             if (type === "A") {
                 return new ConcreteProductA();
             } else if (type === "B") {
