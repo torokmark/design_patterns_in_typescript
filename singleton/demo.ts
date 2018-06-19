@@ -3,8 +3,8 @@ namespace SingletonPattern {
 	export namespace Demo {
 
 		export function show() : void {
-			var singleton1 = SingletonPattern.Singleton.Instance();
-			var singleton2 = SingletonPattern.Singleton.Instance();
+			const singleton1 = SingletonPattern.Singleton.getInstance();
+			const singleton2 = SingletonPattern.Singleton.getInstance();
 
 			if (singleton1 === singleton2) {
 				console.log("two singletons are equivalent");
