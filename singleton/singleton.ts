@@ -11,13 +11,13 @@ namespace SingletonPattern {
         // This is how we create a singleton object
         public static getInstance(): Singleton {
             // check if an instance of the class is already created
-            if (!this.singleton) {
+            if (!Singleton.singleton) {
                 // If not created create an instance of the class
                 // store the instance in the variable
-                this.singleton = new Singleton();
+                Singleton.singleton = new Singleton();
             }
             // return the singleton object
-            return this.singleton
+            return Singleton.singleton
         }
     }
 }
