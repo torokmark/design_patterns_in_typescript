@@ -17,7 +17,7 @@ namespace SingletonPattern {
                 Singleton.singleton = new Singleton();
             }
             // return the singleton object
-            return Singleton.singleton
+            return Singleton.singleton;
         }
     }
 }
