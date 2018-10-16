@@ -3,12 +3,13 @@
 namespace BuilderPattern {
 	export namespace Demo {
 		export function show() : void {
-			var u: BuilderPattern.User = new BuilderPattern.UserBuilder("Jancsi")
-                        .setAge(12)
-                        .setPhone("0123456789")
-                        .setAddress("asdf")
-                        .build();
-    		console.log(u.Name + " " + u.Age + " " + u.Phone + " " + u.Address);
+			let userBuilder: BuilderPattern.UserBuilder = new BuilderPattern.UserBuilder("Jancsi")
+						
+			let director: BuilderPattern.Director = new BuilderPattern.Director(userBuilder);
+			director.makeUser();
+
+			let user: BuilderPattern.User = userBuilder.getResult();
+    		console.log(user.Name + " " + user.Age + " " + user.Phone + " " + user.Address);
 		}
 	}
 }
