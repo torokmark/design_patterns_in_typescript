@@ -1,7 +1,7 @@
 namespace FactoryMethodPattern {
 
     export interface AbstractProduct {
-        method(param?: any) : void;
+        method(param?: any): void;
     }
 
     export class ConcreteProductA implements AbstractProduct {
@@ -16,16 +16,20 @@ namespace FactoryMethodPattern {
         }
     }
 
+    export abstract class AbstractFactory {
+        abstract createProduct(): AbstractProduct;
+    }
 
-    export namespace ProductFactory {
-        export function createProduct(type: string) : AbstractProduct {
-            if (type === "A") {
-                return new ConcreteProductA();
-            } else if (type === "B") {
-                return new ConcreteProductB();
-            }
-
-            return null;
+    export class ConcreteFactoryA extends AbstractFactory {
+        createProduct(): AbstractProduct {
+            return new ConcreteProductA();
         }
     }
+
+    export class ConcreteFactoryB extends AbstractFactory {
+        createProduct(): AbstractProduct {
+            return new ConcreteProductB();
+        }
+    }
+
 }
