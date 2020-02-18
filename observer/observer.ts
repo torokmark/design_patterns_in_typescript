@@ -47,7 +47,7 @@ namespace ObserverPattern {
         private state: number;
         private subject: ConcreteSubject;
 
-        constructor ( name: string) {
+        constructor (name: string) {
             super();
             console.log("ConcreteObserver", name, "is created!");
             this.name = name;
