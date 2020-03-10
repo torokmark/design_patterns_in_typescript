@@ -24,8 +24,8 @@
 //
 //
 //
-declare var require : (moduleId : string) => any;
-declare var process : any;
+//declare var require : (moduleId : string) => any;
+//declare var process : any;
 
 var readline = require('readline');
 
