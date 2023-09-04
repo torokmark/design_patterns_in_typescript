@@ -24,16 +24,16 @@
 //
 //
 //
-declare var require : (moduleId : string) => any;
-declare var process : any;
+declare let require : (moduleId : string) => any;
+declare let process : any;
 
-var readline = require('readline');
+const readline = require('readline');
 
 namespace Patterns {
 
 
 	function printMenu() : void {
-		var menu =	"= Creational Patterns == \n" +
+		const menu =	"= Creational Patterns == \n" +
 					"  1: Singleton \n" +
 					"  2: Abstract factory \n" +
 					"  3: Factory method \n" +
@@ -68,7 +68,7 @@ namespace Patterns {
 	}
 
 	export function menu() : void {
-		var rl = readline.createInterface({
+		const rl = readline.createInterface({
 					input: process.stdin,
 					output: process.stdout
 			});

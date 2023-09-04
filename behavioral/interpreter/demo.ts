@@ -3,7 +3,7 @@ namespace InterpreterPattern {
 	export namespace Demo {
 
 		export function show() : void {
-			var context: InterpreterPattern.Context = new InterpreterPattern.Context(),
+			let context: InterpreterPattern.Context = new InterpreterPattern.Context(),
 				list = [],
 				i = 0,
 				max;

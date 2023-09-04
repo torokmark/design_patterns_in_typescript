@@ -1,17 +1,17 @@
 namespace FlyweightPattern {
 
     export interface Flyweight {
-        operation(s: String): void;
+        operation(s: string): void;
     }
 
     export class ConcreteFlyweight implements Flyweight {
-        private instrinsicState: String;
+        private instrinsicState: string;
 
-        constructor(instrinsicState: String) {
+        constructor(instrinsicState: string) {
             this.instrinsicState = instrinsicState;
         }
 
-        public operation(s: String): void {
+        public operation(s: string): void {
             console.log("`operation` of ConcreteFlyweight", s, " is being called!");
         }
     }
@@ -23,7 +23,7 @@ namespace FlyweightPattern {
             this.allState = allState;
         }
 
-        public operation(s: String): void {
+        public operation(s: string): void {
             console.log("`operation` of UnsharedConcreteFlyweight", s, " is being called!");
         }
     }

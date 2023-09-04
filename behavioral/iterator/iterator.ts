@@ -19,7 +19,7 @@ namespace IteratorPattern {
 
         public next(): any {
             // Error handling is left out
-            var result = this.collection[this.position];
+            const result = this.collection[this.position];
             this.position += 1;
             return result;
         }

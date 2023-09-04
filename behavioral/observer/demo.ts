@@ -3,7 +3,7 @@ namespace ObserverPattern {
 	export namespace Demo {
 
 		export function show() : void {
-			var sub: ObserverPattern.ConcreteSubject = new ObserverPattern.ConcreteSubject();
+			const sub: ObserverPattern.ConcreteSubject = new ObserverPattern.ConcreteSubject();
 
 			sub.register(new ObserverPattern.ConcreteObserver(sub, "Jancsi"));
 			sub.register(new ObserverPattern.ConcreteObserver(sub, "Julcsa"));

@@ -6,9 +6,10 @@
   "dependencies": {
     "typescript": "^5.2.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "npx tsc && node patterns.js"
+    "start": "npx tsc && node patterns.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/iborba/design_patterns_in_typescript/issues"
   },
-  "homepage": "https://github.com/iborba/design_patterns_in_typescript#readme"
+  "homepage": "https://github.com/iborba/design_patterns_in_typescript#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "eslint": "^8.48.0"
+  }
 }

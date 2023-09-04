@@ -13,7 +13,7 @@ namespace AdapterPattern {
     export class Adapter implements Target {
         public call(): void {
             console.log("Adapter's `call` method is being called");
-            var adaptee: Adaptee = new Adaptee();
+            const adaptee: Adaptee = new Adaptee();
             adaptee.method();
         }
     }

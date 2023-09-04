@@ -3,7 +3,7 @@ namespace ChainOfResponsibilityPattern {
 	export namespace Demo {
 
 		export function show() : void {
-		    var h1: ChainOfResponsibilityPattern.Handler,
+		    let h1: ChainOfResponsibilityPattern.Handler,
 				h2: ChainOfResponsibilityPattern.Handler,
 				h3: ChainOfResponsibilityPattern.Handler,
 				reqs: number[],

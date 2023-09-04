@@ -3,7 +3,7 @@ namespace StrategyPattern {
 	export namespace Demo {
 
 		export function show() : void {
-		    var context: StrategyPattern.Context = new StrategyPattern.Context(new StrategyPattern.ConcreteStrategy1());
+		    let context: StrategyPattern.Context = new StrategyPattern.Context(new StrategyPattern.ConcreteStrategy1());
 
 			context.executeStrategy();
 

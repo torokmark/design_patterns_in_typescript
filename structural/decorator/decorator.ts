@@ -5,9 +5,9 @@ namespace DecoratorPattern {
     }
 
     export class ConcreteComponent implements Component {
-        private s: String;
+        private s: string;
 
-        constructor(s: String) {
+        constructor(s: string) {
             this.s = s;
         }
 
@@ -18,14 +18,14 @@ namespace DecoratorPattern {
 
     export class Decorator implements Component {
         private component: Component;
-        private id: Number;
+        private id: number;
 
-        constructor(id: Number, component: Component) {
+        constructor(id: number, component: Component) {
             this.id = id;
             this.component = component;
         }
 
-        public get Id(): Number {
+        public get Id(): number {
             return this.id;
         }
 
@@ -36,7 +36,7 @@ namespace DecoratorPattern {
     }
 
     export class ConcreteDecorator extends Decorator {
-        constructor(id: Number, component: Component) {
+        constructor(id: number, component: Component) {
             super(id, component);
         }
 

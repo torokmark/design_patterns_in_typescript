@@ -8,7 +8,7 @@ namespace FactoryMethodPattern {
 
 		    console.log(a.method());
 		    console.log(b.method());
-		};
+		}
 	}
 }
 

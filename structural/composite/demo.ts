@@ -2,7 +2,7 @@
 namespace CompositePattern {
 	export namespace Demo {
 		export function show() : void {
-		    var leaf1 = new CompositePattern.Leaf("1"),
+		    const leaf1 = new CompositePattern.Leaf("1"),
 				leaf2 = new CompositePattern.Leaf("2"),
 				leaf3 = new CompositePattern.Leaf("3"),
 

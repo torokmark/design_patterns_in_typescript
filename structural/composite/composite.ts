@@ -6,16 +6,16 @@ namespace CompositePattern {
     export class Composite implements Component {
 
         private list: Component[];
-        private s: String;
+        private s: string;
 
-        constructor(s: String) {
+        constructor(s: string) {
             this.list = [];
             this.s = s;
         }
 
         public operation(): void {
             console.log("`operation of `", this.s)
-            for (var i = 0; i < this.list.length; i += 1) {
+            for (let i = 0; i < this.list.length; i += 1) {
                 this.list[i].operation();
             }
         }
@@ -33,8 +33,8 @@ namespace CompositePattern {
     }
 
     export class Leaf implements Component {
-        private s: String;
-        constructor(s: String) {
+        private s: string;
+        constructor(s: string) {
             this.s = s;
         }
         public operation(): void {

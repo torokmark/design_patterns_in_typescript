@@ -6,7 +6,7 @@ namespace BridgePattern {
             this.implementor = imp;
         }
 
-        public callIt(s: String): void {
+        public callIt(s: string): void {
             throw new Error("This method is abstract!");
         }
     }
@@ -16,7 +16,7 @@ namespace BridgePattern {
             super(imp);
         }
 
-        public callIt(s: String): void {
+        public callIt(s: string): void {
             console.log("This is RefinedAbstractionA");
             this.implementor.callee(s);
         }
@@ -27,7 +27,7 @@ namespace BridgePattern {
             super(imp);
         }
 
-        public callIt(s: String): void {
+        public callIt(s: string): void {
             console.log("This is RefinedAbstractionB");
             this.implementor.callee(s);
         }

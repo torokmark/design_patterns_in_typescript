@@ -51,12 +51,12 @@ namespace VisitorPattern {
         }
 
         public detach(e: Element): void {
-            var index = this.elements.indexOf(e);
+            const index = this.elements.indexOf(e);
             this.elements.splice(index, 1);
         }
 
         public operate(visitor: Visitor): void {
-            var i = 0,
+            let i = 0,
                 max = this.elements.length;
 
             for(; i < max; i += 1) {

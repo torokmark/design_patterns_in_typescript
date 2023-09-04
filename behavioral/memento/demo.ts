@@ -3,7 +3,7 @@ namespace MementoPattern {
 	export namespace Demo {
 
 		export function show() : void {
-			var state: MementoPattern.State = new MementoPattern.State("... State "),
+			const state: MementoPattern.State = new MementoPattern.State("... State "),
 				originator: MementoPattern.Originator = new MementoPattern.Originator(state),
 				careTaker: MementoPattern.CareTaker = new MementoPattern.CareTaker();
 

@@ -8,14 +8,14 @@ namespace ObserverPattern {
         }
 
         public unregister(observer: Observer): void {
-            var n: number = this.observers.indexOf(observer);
+            const n: number = this.observers.indexOf(observer);
             console.log(observer, "is removed");
             this.observers.splice(n, 1);
         }
 
         public notify(): void {
             console.log("notify all the observers", this.observers);
-            var i: number
+            let i: number
               , max: number;
 
             for (i = 0, max = this.observers.length; i < max; i += 1) {
