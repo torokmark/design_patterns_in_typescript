@@ -1,0 +1,23 @@
+{
+  "name": "design_patterns_in_typescript",
+  "version": "1.0.0",
+  "description": "Here are the implementations of the following design patterns in TypeScript:",
+  "main": "patterns.js",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx tsc && node patterns.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iborba/design_patterns_in_typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iborba/design_patterns_in_typescript/issues"
+  },
+  "homepage": "https://github.com/iborba/design_patterns_in_typescript#readme"
+}
