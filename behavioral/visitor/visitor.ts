@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
 namespace VisitorPattern {
     export interface Visitor {
         visitConcreteElement1(concreteElement1: ConcreteElement1): void;
@@ -56,8 +59,8 @@ namespace VisitorPattern {
         }
 
         public operate(visitor: Visitor): void {
-            let i = 0,
-                max = this.elements.length;
+            let i = 0
+            const max = this.elements.length;
 
             for(; i < max; i += 1) {
                 this.elements[i].operate(visitor);

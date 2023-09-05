@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
 namespace FacadePattern {
-
     export class Part1 {
         public method1(): void {
             console.log("`method1` of Part1");

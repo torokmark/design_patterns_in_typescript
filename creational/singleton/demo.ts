@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
+/* eslint-disable @typescript-eslint/triple-slash-reference */
 /// <reference path="singleton.ts" />
 namespace SingletonPattern {
 	export namespace Demo {

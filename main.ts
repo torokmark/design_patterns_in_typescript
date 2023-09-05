@@ -1,3 +1,8 @@
+/* eslint-disable no-inner-declarations */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
+/* eslint-disable @typescript-eslint/triple-slash-reference */
 /// <reference path="creational/singleton/demo.ts" />
 /// <reference path="creational/abstract_factory/demo.ts" />
 /// <reference path="creational/factory_method/demo.ts" />
@@ -30,7 +35,6 @@ declare let process : any;
 const readline = require('readline');
 
 namespace Patterns {
-
 
 	function printMenu() : void {
 		const menu =	"= Creational Patterns == \n" +
@@ -74,7 +78,7 @@ namespace Patterns {
 			});
 
 		printMenu();
-	   	rl.question("Which pattern would you like to check?   ", function(answer) {
+		rl.question("Which pattern would you like to check?   ", function(answer) {
 			switch(+answer) {
 				case 1 : show(SingletonPattern); break;
 				case 2 : show(AbstractFactoryPattern); break;

@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
 namespace MediatorPattern {
     export interface Mediator {
         send(msg: string, colleague: Colleague): void;

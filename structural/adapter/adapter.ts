@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
 namespace AdapterPattern {
-
     export class Adaptee {
         public method(): void {
             console.log("`method` of Adaptee is being called");

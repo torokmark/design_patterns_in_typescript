@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
 namespace FlyweightPattern {
 
     export interface Flyweight {
@@ -29,7 +32,6 @@ namespace FlyweightPattern {
     }
 
     export class FlyweightFactory {
-
         private fliesMap: { [s: string]: Flyweight; } = <any>{};
 
         constructor() { }

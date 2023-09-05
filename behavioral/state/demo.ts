@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
+/* eslint-disable @typescript-eslint/triple-slash-reference */
 /// <reference path="state.ts" />
 namespace StatePattern {
 	export namespace Demo {
@@ -12,7 +15,6 @@ namespace StatePattern {
 			context.request();
 			context.request();
 			context.request();
-
 		}
 	}
 }

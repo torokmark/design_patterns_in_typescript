@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-namespace */
 namespace BridgePattern {
-
     export class Abstraction {
         implementor: Implementor;
         constructor(imp: Implementor) {
